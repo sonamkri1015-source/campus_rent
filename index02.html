@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bunny's Restaurant</title>
+        <style>
+            body{
+                background-color :#FFF8F0;
+                color: #493225;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            div{
+                background-color: white;
+                border: 2px solid #F2D6DC;
+                border-radius: 15px;
+                padding :15px;
+                margin: 15px auto;
+                max-width: 300px;
+            }
+            h1{
+                color: #8B5E3C;
+            }
+            h2{
+                color:#C07891;
+            }
+
+            .menu-container{
+                display:flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap:20px;
+                padding:20px;
+            }
+             .food-card {
+            background-color: white;
+            border: 2px solid #F2D6DC;
+            border-radius: 15px;
+            padding: 15px;
+            width: 250px;
+        }
+
+        .food-card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: #A65D76;
+            font-weight: bold;
+        }
+
+        .navbar{
+            background-color: #F2D6DC;
+            padding: 10px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+        }
+        .logo {
+    color: #8B5E3C;
+    margin: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #493225;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #C07891;
+}
+   .hero{
+    background-color:#FFF0F3;
+    padding: 35px 20px;
+    margin: 20px;
+    border-radius:20px;
+   }
+   
+   .hero p{
+    color:#795548;
+    font-size:18px;
+   }
+   
+   
+   .hero-button{
+    display:inline-block;
+    background-color: #C07891;
+    color:white;
+    padding: 12px 24px;
+    border-radius:25px;
+    text-decoration: none;
+    font-weight:bold;
+   }
+
+   .hero-button:hover{
+    background-color: #885E3C;
+   }
+
+
+   .about{
+    background-color: white;
+    border: 2px solid #F2D6DC;
+    border-radius: 20px;
+    padding:25px;
+    margin: 30px auto;
+    max-width: 700px;
+   }
+   .about p{
+    font-size: 16px;
+    line-height:1.8;
+    color:#795548
+   }
+   
+
+   .contact{
+    background-color: #FFF0F3;
+    border: 2px solid #F2D6DC;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 30px auto;
+    max-width: 700px;
+   }
+       .contact p{
+        line-height: 1.8;
+       }
+       .contact-button{
+        display:inline-block;
+        background-color: #C07891;
+        color:white;
+        padding: 12px 24px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+       }
+       .contact-button:hover{
+        background-color: #8B5E3C;
+       }
+
+       @media(max-width: 600px){
+        .menu-container{
+            flex-direction: column;
+            align-items:center;
+        }
+
+        .navbar{
+            flex-direction: column;
+            gap: 10px;
+        }
+        .nav-links{
+            flex-wrap: wrap;
+            justify-content:center;
+        }
+        .food-card{
+            width: 250px;
+        }
+       }
+
+       .order-button{
+        background-color:#C07891;
+        color:white;
+        padding: 10px 20px;
+        border-radius:20px;
+        font-weight:bold;
+        cursor:pointer;
+       }
+       .order-button:hover{
+        background-color:#8B5E3C
+       }
+       
+       </style>
+    </head>
+
+<body>
+ 
+    <nav class="navbar">
+        <h2 class="logo">🐰 Bunny's Cafe</h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <section class="hero" id="home">
+        <h1>Made with love, Served with Joy💗</h1>
+        <p>Your cozy corner for delicious bites!</p>
+        <a href="#menu" class="hero-button">
+            Explore our menu
+        </a>
+    </section>
+    <h1 id="home">Welcome to Bunny's Restaurant🐇</h1>
+    <h2 id="menu">Our Menu</h2>
+    <section class="about" id="about">
+        <h2>Our story</h2>
+        <p>
+            Welcome to Bunny's Resturant!
+            we serve delicious food made with love.
+            Our little cafe is a cozy place to enjoy
+            tasty treats with your friends and family.
+        </p>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Get in Touch💌</h2>
+        <p>
+            we would love to hear from you!
+        </p><p>📧 Email: bunnycafe@gamil.com</p>
+        <a href="mailto:bunnycafe@gmail.com" class="contact-button">
+            Contact us💗</a>
+    </section>
+    <div class="menu-container">
+    <div class="food-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.xsNkDZ2OSmgVRnqa1PchnQHaE7?r=0&pid=Api&h=220&P=0" alt="Veg Burger" width="200">
+    <h3>Veg Burger</h3>
+    <p>Delicious Crispy Veg Burger.</p>
+    <p class="price">Price: ₹99</p>
+    <button class="order-button">Add to cart 🛒</button>
+</div>
+<div class="food-card">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.oN4-t0eMNyEKFAQnQAIQNAHaLH?r=0&pid=Api&h=220&P=0" alt="Cold coffee">
+    <h3>Cold Coffee</h3>
+    <p>Chilled coffee with creamy milk.</p>
+    <p class="price">Price: ₹79</p>
+    <button class="order-button">Add to cart 🛒</button>
+</div>
+</div>
+   <script>
+        let burgerButton = document.querySelector(".order-button");
+        console.log(burgerButton);
+        
+    </script>
+</body>
+</html>
