@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose payment | CampusRent</title><link rel="stylesheet" href="style.css">
+</head>
+<body class="checkout-page">
+<header><div class="container nav"><a href="index01.html" class="brand">Campus<span>Rent.</span></a><a class="btn btn-light" href="index01.html">← Back to store</a></div></header>
+<main class="checkout-wrap"><div class="checkout-card">
+<a class="checkout-back" href="index01.html">← Edit booking</a><span class="kicker">SECURE CHECKOUT</span><h1>Choose how to pay</h1><p class="checkout-sub">Your rental is almost booked. Select a payment option below.</p>
+<div id="checkoutSummary" class="checkout-summary"></div>
+<div class="checkout-options">
+<button class="checkout-option" id="qrChoice" onclick="selectCheckoutMethod('qr')"><span class="checkout-icon">▦</span><span><strong>Scan QR to pay</strong><small>Pay online with any UPI app</small></span><span class="radio-dot"></span></button>
+<button class="checkout-option" id="spotChoice" onclick="selectCheckoutMethod('spot')"><span class="checkout-icon">🤝</span><span><strong>Pay on the spot</strong><small>Pay the owner when you collect the rental</small></span><span class="radio-dot"></span></button>
+</div>
+<section id="qrPanel" class="checkout-panel" hidden><h2>Scan with a UPI app</h2><p>Scan this code and pay the exact rental amount shown.</p><div class="qr-frame"><img id="paymentQr" alt="UPI payment QR code"><span id="qrLoading">Preparing QR code…</span></div><div class="upi-detail"><span>UPI ID</span><strong id="merchantUpi"></strong></div><a id="upiDeepLink" class="btn btn-primary upi-open" href="#">Open UPI app</a><p class="pay-note">After paying, tap “I’ve paid” to save your request as payment pending verification.</p><button class="btn btn-primary checkout-confirm" onclick="completeCheckout('UPI QR','Pending verification')">I’ve paid · Save request</button><div class="demo-pay-box"><strong>Demo testing only</strong><p>This simulates a successful payment. No money is sent and no UPI ID is needed.</p><button class="btn demo-pay-button" onclick="completeCheckout('Demo simulation','Demo payment complete')">Simulate demo payment</button></div></section>
+<section id="spotPanel" class="checkout-panel" hidden><h2>Pay when you collect</h2><p>Meet the owner at the agreed pickup time and pay by cash or UPI on the spot.</p><div class="spot-note">💵 No online payment is needed now. Your rental request will be saved as awaiting pickup payment.</div><button class="btn btn-primary checkout-confirm" onclick="completeCheckout('Pay on spot','Due at pickup')">Confirm pay on spot</button></section>
+<div id="checkoutDone" class="checkout-done" hidden></div>
+<p class="checkout-disclaimer">Prototype checkout: this page does not verify payments or charge money. For live payments, connect a payment provider and verify payment status on a server.</p>
+</div></main><div class="toast" id="toast"></div><script src="checkout.js" defer></script>
+</body></html>
