@@ -1,241 +1,87 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Bunny's Restaurant</title>
-        <style>
-            body{
-                background-color :#FFF8F0;
-                color: #493225;
-                font-family: Arial, Helvetica, sans-serif;
-                text-align: center;
-            }
-            div{
-                background-color: white;
-                border: 2px solid #F2D6DC;
-                border-radius: 15px;
-                padding :15px;
-                margin: 15px auto;
-                max-width: 300px;
-            }
-            h1{
-                color: #8B5E3C;
-            }
-            h2{
-                color:#C07891;
-            }
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusRent | Student Equipment Rental Portal</title>
 
-            .menu-container{
-                display:flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap:20px;
-                padding:20px;
-            }
-             .food-card {
-            background-color: white;
-            border: 2px solid #F2D6DC;
-            border-radius: 15px;
-            padding: 15px;
-            width: 250px;
-        }
-
-        .food-card img {
-            width: 100%;
-            height: 170px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
-
-        .price {
-            color: #A65D76;
-            font-weight: bold;
-        }
-
-        .navbar{
-            background-color: #F2D6DC;
-            padding: 10px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap:wrap;
-        }
-        .logo {
-    color: #8B5E3C;
-    margin: 10px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    color: #493225;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: #C07891;
-}
-   .hero{
-    background-color:#FFF0F3;
-    padding: 35px 20px;
-    margin: 20px;
-    border-radius:20px;
-   }
-   
-   .hero p{
-    color:#795548;
-    font-size:18px;
-   }
-   
-   
-   .hero-button{
-    display:inline-block;
-    background-color: #C07891;
-    color:white;
-    padding: 12px 24px;
-    border-radius:25px;
-    text-decoration: none;
-    font-weight:bold;
-   }
-
-   .hero-button:hover{
-    background-color: #885E3C;
-   }
-
-
-   .about{
-    background-color: white;
-    border: 2px solid #F2D6DC;
-    border-radius: 20px;
-    padding:25px;
-    margin: 30px auto;
-    max-width: 700px;
-   }
-   .about p{
-    font-size: 16px;
-    line-height:1.8;
-    color:#795548
-   }
-   
-
-   .contact{
-    background-color: #FFF0F3;
-    border: 2px solid #F2D6DC;
-    border-radius: 20px;
-    padding: 30px 20px;
-    margin: 30px auto;
-    max-width: 700px;
-   }
-       .contact p{
-        line-height: 1.8;
-       }
-       .contact-button{
-        display:inline-block;
-        background-color: #C07891;
-        color:white;
-        padding: 12px 24px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: bold;
-       }
-       .contact-button:hover{
-        background-color: #8B5E3C;
-       }
-
-       @media(max-width: 600px){
-        .menu-container{
-            flex-direction: column;
-            align-items:center;
-        }
-
-        .navbar{
-            flex-direction: column;
-            gap: 10px;
-        }
-        .nav-links{
-            flex-wrap: wrap;
-            justify-content:center;
-        }
-        .food-card{
-            width: 250px;
-        }
-       }
-
-       .order-button{
-        background-color:#C07891;
-        color:white;
-        padding: 10px 20px;
-        border-radius:20px;
-        font-weight:bold;
-        cursor:pointer;
-       }
-       .order-button:hover{
-        background-color:#8B5E3C
-       }
-       
-       </style>
-    </head>
-
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
- 
-    <nav class="navbar">
-        <h2 class="logo">🐰 Bunny's Cafe</h2>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#menu">Menu</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </nav>
-    <section class="hero" id="home">
-        <h1>Made with love, Served with Joy💗</h1>
-        <p>Your cozy corner for delicious bites!</p>
-        <a href="#menu" class="hero-button">
-            Explore our menu
-        </a>
-    </section>
-    <h1 id="home">Welcome to Bunny's Restaurant🐇</h1>
-    <h2 id="menu">Our Menu</h2>
-    <section class="about" id="about">
-        <h2>Our story</h2>
-        <p>
-            Welcome to Bunny's Resturant!
-            we serve delicious food made with love.
-            Our little cafe is a cozy place to enjoy
-            tasty treats with your friends and family.
-        </p>
-    </section>
-    <section class="contact" id="contact">
-        <h2>Get in Touch💌</h2>
-        <p>
-            we would love to hear from you!
-        </p><p>📧 Email: bunnycafe@gamil.com</p>
-        <a href="mailto:bunnycafe@gmail.com" class="contact-button">
-            Contact us💗</a>
-    </section>
-    <div class="menu-container">
-    <div class="food-card">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.xsNkDZ2OSmgVRnqa1PchnQHaE7?r=0&pid=Api&h=220&P=0" alt="Veg Burger" width="200">
-    <h3>Veg Burger</h3>
-    <p>Delicious Crispy Veg Burger.</p>
-    <p class="price">Price: ₹99</p>
-    <button class="order-button">Add to cart 🛒</button>
-</div>
-<div class="food-card">
-    <img src="https://tse2.mm.bing.net/th/id/OIP.oN4-t0eMNyEKFAQnQAIQNAHaLH?r=0&pid=Api&h=220&P=0" alt="Cold coffee">
-    <h3>Cold Coffee</h3>
-    <p>Chilled coffee with creamy milk.</p>
-    <p class="price">Price: ₹79</p>
-    <button class="order-button">Add to cart 🛒</button>
-</div>
-</div>
-   <script>
-        let burgerButton = document.querySelector(".order-button");
-        console.log(burgerButton);
-        
-    </script>
+<header><div class="container nav">
+<a href="#home" class="brand">Campus<span>Rent.</span></a>
+<nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#catalog">Explore</a><a href="#insights">Insights</a><a href="#how">How it works</a><a href="#faq">FAQs</a></nav>
+<div class="navactions"><button class="btn btn-light" onclick="showModal('login')">Login</button><button class="btn btn-primary" onclick="showModal('register')">Join CampusRent</button><button class="menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button></div>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid">
+<div><span class="eyebrow">✦ THE SMARTER WAY TO ACCESS EQUIPMENT</span><h1>Need it for a while?<br><span>Rent it on campus.</span></h1><p class="hero-copy">A student-first rental marketplace for books, gadgets, hostel essentials, sports gear, travel kits and more. Save money, share resources and make every college project easier.</p>
+<div class="hero-actions"><a class="btn-primary" href="#catalog">Explore equipment →</a><a class="btn-light" href="#how">See how it works</a></div>
+<div class="hero-stats"><div><strong>80+</strong><span>Student community</span></div><div><strong>40+</strong><span>Sample listings</span></div><div><strong>4.8/5</strong><span>Ratings</span></div></div></div>
+<div class="hero-photo"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1100" alt="Laptop and desk workspace"><div class="floatbox float-a">✓ Student-friendly rentals<small>Flexible rental durations</small></div><div class="floatbox float-b">⚡ Easy booking<small>Find equipment in minutes</small></div></div>
+</div></section>
+
+<div class="trust"><div class="container trust-row"><span>🔒 Secure booking concept</span><span>🎓 Built around student needs</span><span>♻️ Share more, waste less</span><span>📍 Campus-focused platform</span></div></div>
+
+<section id="categories"><div class="container"><div class="section-head"><span class="kicker">BROWSE BY CATEGORY</span><h2>One campus. Many possibilities.</h2><p>Pick a category, then narrow it down to exactly what you need.</p></div>
+<div class="category-grid" id="categoryGrid"></div>
+<div class="sub-panel" id="subPanel"></div>
+</div></section>
+
+<section class="catalog" id="catalog"><div class="container">
+<div class="catalog-top"><div><span class="kicker">THE RENTAL MARKETPLACE</span><h2>Explore available equipment</h2><p>Browse sample listings and compare rental prices.</p></div><button class="btn btn-light" onclick="resetFilters()">Reset filters ↺</button></div>
+<div class="filters"><input id="search" placeholder="⌕  Search equipment or brand..." oninput="renderProducts()"><select id="categoryFilter" onchange="onCategoryChange()"></select><select id="subFilter" onchange="renderProducts()"><option value="All">All types</option></select><select id="priceFilter" onchange="renderProducts()"><option value="all">Any price</option><option value="under200">Under ₹200/day</option><option value="200to500">₹200–₹500/day</option><option value="above500">Above ₹500/day</option></select><select id="sort" onchange="renderProducts()"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+<div class="products" id="products"></div>
+</div></section>
+
+<section><div class="container"><div class="section-head"><span class="kicker">WHY CAMPUSRENT</span><h2>Designed around student life</h2><p>Make equipment access simpler without the cost and commitment of buying every device.</p></div>
+<div class="feature-strip">
+<div class="feature"><div class="ico">💸</div><h3>Budget friendly</h3><p>Pay for the time you need instead of purchasing expensive equipment.</p></div>
+<div class="feature"><div class="ico">🗓️</div><h3>Flexible duration</h3><p>Choose a rental period that suits your assignment, event or semester project.</p></div>
+<div class="feature"><div class="ico">🔎</div><h3>Easy discovery</h3><p>Search and filter listings by category, type and daily rental price.</p></div>
+<div class="feature"><div class="ico">🌱</div><h3>Resource sharing</h3><p>Encourage reuse and make useful equipment available to more students.</p></div>
+</div></div></section>
+
+<section class="dashboard" id="insights"><div class="container"><div class="section-head"><span class="kicker">CAMPUSRENT INSIGHTS</span><h2>Marketplace at a glance</h2><p>Example analytics dashboard showing how a rental marketplace can present activity and category trends.</p></div>
+<div class="dash-shell"><div class="dash-head"><div><h3>Platform overview</h3><p>Illustrative sample data · not live transactions</p></div><span class="dash-label">● DEMO ANALYTICS</span></div>
+<div class="metric-grid"><div class="metric"><span>Total equipment listings</span><strong>42</strong><small>↑ Sample marketplace inventory</small></div><div class="metric"><span>Rental requests</span><strong>26</strong><small>↑ 86 example booking activity</small></div><div class="metric"><span>Registered students</span><strong>81</strong><small>↑ Example community size</small></div><div class="metric"><span>Categories</span><strong>9</strong><small>● Equipment groups</small></div></div>
+<div class="charts"><div class="chart-card"><h4>Monthly rental requests</h4><p>Illustrative requests by month</p><div class="bar-chart" aria-label="Sample monthly rental requests bar chart">
+<div class="bar-wrap"><b>18</b><div class="bar" style="height:36%"></div><span>Jan</span></div><div class="bar-wrap"><b>26</b><div class="bar" style="height:52%"></div><span>Feb</span></div><div class="bar-wrap"><b>34</b><div class="bar" style="height:68%"></div><span>Mar</span></div><div class="bar-wrap"><b>29</b><div class="bar" style="height:58%"></div><span>Apr</span></div><div class="bar-wrap"><b>43</b><div class="bar" style="height:86%"></div><span>May</span></div><div class="bar-wrap"><b>50</b><div class="bar" style="height:100%"></div><span>Jun</span></div></div><p class="chart-note">The values above are fictional sample values for demonstrating a dashboard chart.</p></div>
+<div class="chart-card"><h4>Listings by category</h4><p>Illustrative inventory distribution</p><div class="donut-wrap"><div class="donut"></div><div class="legend"><span><i class="dot" style="background:#574be8"></i>Electronics · 42%</span><span><i class="dot" style="background:#8e86f5"></i>Hostel &amp; Household · 26%</span><span><i class="dot" style="background:#c5c1ff"></i>Academic · 17%</span><span><i class="dot" style="background:#e8e7ff"></i>Other · 15%</span></div></div><p class="chart-note">Illustrative proportions only, not collected platform data.</p></div></div>
+</div></div></section>
+
+<section id="how"><div class="container"><div class="section-head"><span class="kicker">SIMPLE RENTAL JOURNEY</span><h2>How CampusRent works</h2><p>A clear process from finding equipment to sending a rental request.</p></div>
+<div class="how-grid"><div class="how-card"><div class="step-no">01</div><h3>Create your student account</h3><p>Register with your basic details to start exploring the student rental marketplace.</p></div><div class="how-card"><div class="step-no">02</div><h3>Find the right equipment</h3><p>Compare available items, check the daily rental price and choose your dates.</p></div><div class="how-card"><div class="step-no">03</div><h3>Send a booking request</h3><p>Review your estimated rental amount and submit a request for confirmation.</p></div></div></div></section>
+
+<section class="testimonials"><div class="container"><div class="section-head"><span class="kicker">STUDENT STORIES</span><h2>Made for campus projects</h2><p>Sample testimonial cards showing how student feedback could appear on the platform.</p></div>
+<div class="review-grid"><article class="review"><div class="stars">★★★★★</div><p>“A rental platform like this can make it easier to arrange a trekking kit or lab gear for a short college project without buying one.”</p><div class="person"><div class="avatar">AS</div><div><strong>Arjun S.</strong><small>Media student · Sample review</small></div></div></article><article class="review"><div class="stars">★★★★★</div><p>“I like the idea of comparing equipment and rental prices in one place. It could save students time.”</p><div class="person"><div class="avatar">PK</div><div><strong>Priya K.</strong><small>Computer science · Sample review</small></div></div></article><article class="review"><div class="stars">★★★★★</div><p>“Sharing equipment within a campus community is a practical idea for presentations and events.”</p><div class="person"><div class="avatar">RM</div><div><strong>Rohan M.</strong><small>Business student · Sample review</small></div></div></article></div></div></section>
+
+<section id="faq"><div class="container"><div class="section-head"><span class="kicker">NEED HELP?</span><h2>Frequently asked questions</h2><p>Quick answers about the CampusRent demo experience.</p></div>
+<div class="faq-list">
+<div class="faq"><button onclick="toggleFaq(this)">Who can use CampusRent? <span>＋</span></button><div class="faq-answer">CampusRent is designed as a student-focused equipment rental marketplace. A real deployment can verify student identity through a college email or institution-approved process.</div></div>
+<div class="faq"><button onclick="toggleFaq(this)">How is the rental price calculated? <span>＋</span></button><div class="faq-answer">The demo calculates an estimate using the equipment's daily rate multiplied by the number of rental days selected.</div></div>
+<div class="faq"><button onclick="toggleFaq(this)">Can I cancel a booking? <span>＋</span></button><div class="faq-answer">This front-end demo does not yet include cancellation management. That can be added with a backend booking workflow and clear cancellation rules.</div></div>
+<div class="faq"><button onclick="toggleFaq(this)">Is online payment enabled? <span>＋</span></button><div class="faq-answer">This prototype shows a UPI QR checkout flow, but it does not verify payments or charge real money. Live payments require a payment provider and server-side verification.</div></div>
+<div class="faq"><button onclick="toggleFaq(this)">Are the analytics live? <span>＋</span></button><div class="faq-answer">No. The dashboard charts use illustrative sample values. Live analytics would require a database and real booking records.</div></div>
+</div></div></section>
+
+<section class="newsletter"><div class="container news-row"><div><h2>Stay updated with CampusRent</h2><p>Get product updates and student rental announcements.</p></div><form class="news-form" onsubmit="subscribe(event)"><input type="email" id="newsEmail" placeholder="Enter your email address" required><button>Subscribe</button></form></div></section>
+</main>
+
+<footer><div class="container"><div class="footer-grid"><div><a href="#home" class="brand" style="color:white">Campus<span style="color:#9992ff">Rent.</span></a><p>A student-first equipment rental portal concept designed to make useful technology and campus resources easier to access.</p></div><div><h4>Explore</h4><a href="#categories">Categories</a><a href="#catalog">Equipment listings</a><a href="#insights">Platform insights</a></div><div><h4>Company</h4><a href="#how">How it works</a><a href="#faq">FAQs</a><a href="mailto:hello@campusrent.example">Contact</a></div><div><h4>Account</h4><a href="#" onclick="showModal('login');return false">Student login</a><a href="#" onclick="showModal('register');return false">Create account</a><a href="#catalog">Browse rentals</a></div></div><div class="copyright"><span>© 2026 CampusRent. Academic project prototype.</span><span>Built for smarter campus resource sharing.</span></div></div></footer>
+
+<div class="modal" id="bookingModal"><div class="modal-box"><button class="close" onclick="hideModal('bookingModal')">×</button><h2>Request equipment</h2><p id="selectedName">Complete the details below.</p>
+<div class="field"><label>Full name</label><input id="studentName" placeholder="Your name"></div><div class="field"><label>Student email</label><input id="studentEmail" type="email" placeholder="name@college.edu"></div><div class="field"><label>Rental start date</label><input id="startDate" type="date" onchange="calculateTotal()"></div><div class="field"><label>Rental end date</label><input id="endDate" type="date" onchange="calculateTotal()"></div><div class="total" id="totalPrice">Estimated total: ₹0</div>
+<p class="pay-note">You’ll choose your payment method on the next page.</p>
+<button class="btn btn-primary" onclick="submitBooking()">Continue to payment →</button></div></div>
+
+<div class="modal" id="loginModal"><div class="modal-box"><button class="close" onclick="hideModal('loginModal')">×</button><h2>Welcome back</h2><p>Sign in to your student account demo.</p><div class="field"><label>Email</label><input id="loginEmail" type="email" placeholder="Your email"></div><div class="field"><label>Password</label><input id="loginPassword" type="password" placeholder="Password"></div><button class="btn btn-primary" onclick="login()">Login</button><p style="margin-top:15px">New here? <a href="#" style="color:var(--purple)" onclick="switchModal('loginModal','registerModal');return false">Create account</a></p></div></div>
+
+<div class="modal" id="registerModal"><div class="modal-box"><button class="close" onclick="hideModal('registerModal')">×</button><h2>Create your account</h2><p>Join the CampusRent student community demo.</p><div class="field"><label>Full name</label><input id="regName" placeholder="Your full name"></div><div class="field"><label>Email</label><input id="regEmail" type="email" placeholder="Your email"></div><div class="field"><label>Password</label><input id="regPassword" type="password" placeholder="At least 6 characters"></div><button class="btn btn-primary" onclick="register()">Create account</button><p style="margin-top:15px">Already registered? <a href="#" style="color:var(--purple)" onclick="switchModal('registerModal','loginModal');return false">Login</a></p></div></div>
+<div class="toast" id="toast"></div>
+
+
+  <script src="script.js" defer></script>
 </body>
 </html>
